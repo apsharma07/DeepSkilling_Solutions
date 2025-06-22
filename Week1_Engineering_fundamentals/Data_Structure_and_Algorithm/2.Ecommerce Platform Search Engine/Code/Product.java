@@ -36,6 +36,10 @@ public class Product implements Comparable<Product> {
         this.category = category;
     }
 
+    public Product(int i, String string, int j, double d) {
+        //TODO Auto-generated constructor stub
+    }
+
     // Comparing given value with the object value
     public int compareTo(Product other) {
         return this.productName.compareTo(other.productName);
@@ -46,5 +50,25 @@ public class Product implements Comparable<Product> {
         return "Product{" + "productId=" + productId +
                 ", productName='" + productName + '\'' +
                 ", category='" + category + '\'' + '}';
+    }
+
+    public Integer getProductId() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getProductId'");
+    }
+
+    public void setPrice(double price) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setPrice'");
+    }
+
+    public void setQuantity(int quantity) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setQuantity'");
+    }
+
+    public void display() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'display'");
     }
 }
