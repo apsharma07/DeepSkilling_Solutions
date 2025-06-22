@@ -25,9 +25,17 @@ public class FinancialForecast {
         // Using recursive method
         double recursiveResult = futureValueRecursive(years, rate, presentValue);
         System.out.printf("Future Value (Recursive) after %d years = %.2f\n", years, recursiveResult);
+        /*
+         * Time complexity is O(N)
+         * need to write less line of code
+         */
 
-        // Using iterative method
+        // Using iterative method to reduce computation on large scale
         double iterativeResult = futureValueIterative(years, rate, presentValue);
         System.out.printf("Future Value (Iterative) after %d years = %.2f\n", years, iterativeResult);
+        /*
+         * Time complexity is O(N)
+         * needs to write much code 
+         */
     }
 }
