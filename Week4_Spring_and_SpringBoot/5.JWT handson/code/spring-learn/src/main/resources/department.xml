@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define Departments -->
+    <bean id="hr" class="com.cognizant.spring_learn.model.Department">
+        <property name="id" value="1"/>
+        <property name="name" value="Human Resources"/>
+    </bean>
+
+    <bean id="finance" class="com.cognizant.spring_learn.model.Department">
+        <property name="id" value="2"/>
+        <property name="name" value="Finance"/>
+    </bean>
+
+    <bean id="it" class="com.cognizant.spring_learn.model.Department">
+        <property name="id" value="3"/>
+        <property name="name" value="Information Technology"/>
+    </bean>
+
+    <!-- Department List -->
+    <bean id="departmentList" class="java.util.ArrayList">
+        <constructor-arg>
+            <list>
+                <ref bean="hr"/>
+                <ref bean="finance"/>
+                <ref bean="it"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
