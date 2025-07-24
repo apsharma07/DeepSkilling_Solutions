@@ -1,0 +1,27 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: green;
+  font-weight: bold;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 300px;
+  color: green;
+  font-weight: 500;
+  border: 1px solid grey;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+th {
+  background-color: #f0f0f0;
+}
